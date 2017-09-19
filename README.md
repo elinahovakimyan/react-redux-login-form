@@ -1,0 +1,1 @@
+Welcome to this project. This is a react-redux sign up form with a lot of validations and features. Enjoy ;)
