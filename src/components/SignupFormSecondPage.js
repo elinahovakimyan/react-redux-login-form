@@ -23,7 +23,7 @@ const SignupFormSecondPage = props => {
 		<form className="signupForm secondPage" onSubmit={handleSubmit}>
 			
 
-			<label htmlFor="date" className="dateLabel"> Date of Birth </label><br/>
+			<label htmlFor="date" className="dateLabel"> Date of Birth </label>
 				
 				<Field 
 					name="date"
@@ -31,6 +31,7 @@ const SignupFormSecondPage = props => {
 					placeholder=""
 					className="dateError"
 				/> 
+
 			<div className="date" id="date">
 				<div className="inputDate">
 					<Field 
@@ -99,7 +100,7 @@ const SignupFormSecondPage = props => {
 				</div>
 			</div>
 			<div>
-				<label className="sourceLabel">Where did you hear about us?</label>
+				<label className="sourceLabel" htmlFor="source">Where did you hear about us?</label>
 				<Field name="source" component={renderSources} type="select"/>
 			</div>
 			<div className="buttonPart">

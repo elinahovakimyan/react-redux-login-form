@@ -10,7 +10,6 @@ const rootEl = document.getElementById('root');
 ReactDOM.render(
 	<Provider store={store}>
 		<div className="theForm">
-			<h1 className="heading">Signup</h1>
 			<SignupForm onSubmit={showResults} />
 		</div>
 	</Provider>,

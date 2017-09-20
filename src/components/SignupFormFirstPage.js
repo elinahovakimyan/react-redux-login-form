@@ -9,7 +9,7 @@ const SignupFormFirstPage = props => {
 
 	return (
 		<div>
-			<form className="signupForm" onSubmit={handleSubmit}>
+			<form className="signupForm firstPage" onSubmit={handleSubmit}>
 				<Field 
 					name="email" 
 					type="email" 

@@ -30,22 +30,35 @@ class SignupForm extends Component {
 
 		return (
 
-			<div>
-			    <Progress completed={progressAmount} className="progressBar" />
+			    
 				<div className="theForm">
-					{page === 1 && <SignupFormFirstPage onSubmit={this.nextPage} />}
+					{page === 1 && 
+						<div>
+							<h1 className="heading">Signup</h1>
+							<Progress completed={progressAmount} className="progressBar" />
+							<SignupFormFirstPage 
+								onSubmit={this.nextPage} 
+							/>
+						</div>}
 					{page === 2 && 
-						<SignupFormSecondPage
-							previousPage={this.previousPage}
-							onSubmit={this.nextPage}
-						/> }
+						<div>
+							<h1 className="heading">Signup</h1>
+							<Progress completed={progressAmount} className="progressBar" />
+							<SignupFormSecondPage
+								previousPage={this.previousPage}
+								onSubmit={this.nextPage}
+							/> 
+						</div>}
 					{page === 3 && 
-						<SignupFormThirdPage
-							previousPage={this.previousPage}
-							onSubmit={onSubmit}
-						/>}
+						<div>
+							<h1 className="heading">Thank You!</h1>
+							<Progress completed={progressAmount} className="progressBar" />
+							<SignupFormThirdPage
+								previousPage={this.previousPage}
+								onSubmit={onSubmit}
+							/>
+						</div>}
 				</div>
-			</div>
 		)
 	}
 }
