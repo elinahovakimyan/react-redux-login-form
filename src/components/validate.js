@@ -16,9 +16,9 @@ const validate = values => {
 	}
 
 	// ___________________Date______________________
-	const d = values.day;
-	const m = values.month;
-	const y = values.year;
+	const d = Number(values.day);
+	const m = Number(values.month);
+	const y = Number(values.year);
 	const today = new Date();
 	const year = today.getFullYear();
 	const month = today.getMonth();
@@ -27,20 +27,20 @@ const validate = values => {
 
 	function calDays(m,y) {
 
-	    if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) {
-	        return 31;              
-	    } else if (m == 4 || m == 6 || m == 9 || m == 11) {
-	        return 30;        
-	    } else {    
-	        if ((y % 4 == 0) || (y % 400 == 0 && y % 100 !== 0))
-	        {    
-	            return 29;          
-	        }
-	        else 
+	    if (m === 1 || m === 3 || m === 5 || m === 7 || m === 8 || m === 10 || m === 12) {
+	        return 31;
+	    } else if (m === 4 || m === 6 || m === 9 || m === 11) {
+	        return 30;
+	    } else {
+	        if ((y % 4 === 0) || (y % 400 === 0 && y % 100 !== 0))
 	        {
-	            return 28;              
+	            return 29;
 	        }
-	    }    
+	        else
+	        {
+	            return 28;
+	        }
+	    }
 	}
 
 	if (!values.day && !values.month && !values.year ) {
