@@ -1,5 +1,8 @@
 /*========================= GENERAL ==========================*/
-
+code {
+	text-align: center;
+	font-weight: 0;
+}
 
 .heading {
 	color: #0a92d6;
@@ -24,7 +27,7 @@ form.signupForm {
   align-items: stretch;
   font-size: 20px;
   padding: 15px 0px;
-} 
+}
 
 input:focus {
   outline: none;
@@ -167,7 +170,7 @@ input[type=radio]:checked + label {
 }
 
 .radioFields {
-  
+
   margin: 0 auto;
   display: block;
   width: 540px;
@@ -257,9 +260,7 @@ button.submit:hover {
 
 
 img.done {
-  padding: 100px 40px 80px 40px;
+  padding: 80px 40px 60px 40px;
   margin: 0 auto;
   display: block;
 }
-
-

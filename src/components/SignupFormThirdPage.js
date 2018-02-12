@@ -6,7 +6,7 @@ import '../stylesheets/style.css'
 
 const SignupFormThirdPage = props => {
 	const { handleSubmit, pristine, submitting } = props;
-	return ( 
+	return (
 		<form className="signupForm" onSubmit={handleSubmit}>
 			<div>
 				<img src="img/tick.png" alt="Done!" className="done"/>
@@ -14,9 +14,10 @@ const SignupFormThirdPage = props => {
 			<button className="submit" type="submit" disabled={pristine || submitting}>
 				Go To Dashboard &#x2192;
 			</button>
+			<code> You can find your responses in console </code>
 		</form>
 	)
-} 
+}
 
 
 export default reduxForm({
